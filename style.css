@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgba(73, 73, 73, 0.925);
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+footer {
+    border-top: 1px solid grey;
+}
+
+header {
+    padding: 20px;
+}
+
+header a {
+    color: rgba(73, 73, 73, 0.925);
+    text-decoration: none;
+    padding: 30px;
+}
+
+header a:hover {
+    color:rgb(143, 143, 143);
+}
+
+h3 {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.ratp {
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+}
+
+.ratp:hover {
+    color: rgb(255, 196, 0);
+}
+
+nav a { 
+    padding: 30px;
+}
+
+nav a:hover {
+    color:rgb(255, 196, 0);
+    border-bottom: 1px solid;
+    padding-bottom: 0;
+    transition-duration: 0.8s;
+}
+
+.none {
+    text-decoration: none;
+    color: inherit;
+}
+
+.none:hover {
+    color:rgb(255, 196, 0);
+    transition-duration: 0.8s;
+}
+
+.home {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.big-picture {
+    width: 60%;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.image-museo {
+    width: 93%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.image-archi {
+    width: 25%;
+    margin-left: 30rem;
+}
+
+.image-gare {
+    width: 50%;
+    margin-left: 20rem;
+}
+
+.disposition {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.disposition  h4 {
+    width: 60%;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    padding: 40px;
+}
+
+.evenement {
+    text-align: center;
+    padding: 40px;
+}
+
+.medaillon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medaillon img {
+    width: 25%;
+    margin: 50px;
+    border-radius: 360px;
+}
+
+.medaillon h2, p {
+    margin: 50px;
+}
+
+.move {
+    width: 80%;
+    margin: 50px;
+}
+
+.move:hover {
+    transition: 1s;
+    transform: translate(-20px, -20px) scale(1.2);
+}
+
+
+footer {
+    font-size: 13px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    /* ce code n'est lu que si l'écran a une taille < 1000px */
+    .disposition {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    nav a {
+        display: none;
+    }
+   
+    .plus {
+        display: inline;
+    }
+
+    .medaillon {
+        flex-direction: column;
+    }
+
+    .move:hover {
+        transition: 1s;
+        transform: translate(30px, -30px) scale(1);
+    }
+
+    .big-picture {
+        width: 80%;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .image-museo {
+        width: 70%;
+    }
+
+    .image-gare {
+        width: 70%;
+        margin-left: 3rem;
+    }
+
+    .image-archi {
+        width: 70%;
+        margin-left: 3rem;
+    }
+  }
